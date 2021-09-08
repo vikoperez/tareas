@@ -21,7 +21,7 @@ function App() {
     if(data != null){
       setTaskItems(JSON.parse(data));
     }else{
-      setUserName('fazt Example')
+      setUserName('vico Example')
       setTaskItems([
         { name: 'Task One example', done: false },
         { name: 'Task Two example', done: false },
