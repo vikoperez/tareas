@@ -3,15 +3,12 @@ import {TaskRow} from './components/TaskRow'
 import {TaskBanner} from './components/TaskBanner'
 import {TaskCreator} from './components/TaskCreator'
 import {VisibilityControl} from "./components/VisibilityControl"
+// import {Names} from "./components/Names"
 
 function App() {
 
-  const [userName, setUserName] = useState('victor');
+  const [userName, setUserName] = useState("yolo");
   const [taskItems, setTaskItems] = useState([
-    { name: 'Task One', done: false },
-    { name: 'Task Two', done: false },
-    { name: 'Task Three', done: false },
-    { name: 'Task Four', done: false },
   ]);
 
   const [showCompleted, setShowCompleted] = useState(true)
@@ -53,7 +50,8 @@ function App() {
   )
 
   return (
-    <div className="App">
+    <div className="App">    
+
       <TaskBanner userName={userName} taskItems={taskItems}/>
 
       <TaskCreator callback={createNewTask}/>
